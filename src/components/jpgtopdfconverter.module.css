@@ -1,0 +1,345 @@
+
+/* CSS code */
+.parentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  padding: 0 20px;
+}
+.JpgToPdfConverter {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 250px;
+  background-color: #f2542df3;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentTop {
+  position: absolute;
+  top: 10%;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.FileInputLabel {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 30px;
+  border: 1px dashed #010101;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.FileInputLabel:hover {
+  background-color: #e5e6e6;
+}
+
+.FileInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.drag {
+  margin-top: 15px;
+  margin-bottom: -60px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.JpgToPdfConverter.dragover {
+  background-color: #e5e5e5;
+}
+
+
+.ConvertButton {
+  background-color: #ff3939;
+  color: #fff;
+  padding: 15px 60px;
+  cursor: pointer;
+  border: 1px dashed black;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ConvertButton:hover {
+  background-color: #ff1d1d;
+}
+
+.SuccessMessage {
+  color: #fff;
+  font-weight: bold;
+  margin-top: -50px;
+}
+
+.DownloadLink {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  padding: 15px 60px;
+  border: 1px dashed black;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.DownloadLink:hover {
+  background-color: #ececec;
+}
+
+
+.step2Background {
+  background-color: #fff;
+  height: 500px;
+  border: 1px solid rgb(170, 170, 170);
+}
+
+/* ConvertOptions container */
+.ConvertOptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #9b9b9b;
+  padding: 10px;
+  margin-top: -20px;
+}
+
+/* Option row */
+.ConvertOptions span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.ConvertOptions select {
+  padding: 8px;
+  width: 130px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.ConvertOptions select:hover {
+  border-color: #333;
+}
+
+.ConvertOptions select:focus {
+  outline: none;
+  border-color: #ff0000;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* Rotate Icon */
+.rotateIcon {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.ConvertOptions select option {
+  font-size: 14px;
+  padding: 8px;
+  color: #333;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 600px) {
+  .ConvertOptions {
+    flex-direction: column;
+  }
+
+  .ConvertOptions select {
+    margin-bottom: 10px;
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+}
+
+/* Your existing styles */
+
+.ImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 850px; /* Set your desired width */
+  min-height: 320px; /* Set a minimum height */
+
+}
+
+.ImageBox {
+  width: calc(33.33% - 10px); /* 3 columns with some spacing */
+  margin-bottom: 10px; /* Spacing between rows */
+  position: relative; /* Make the container relative for absolute positioning */
+}
+
+.imgbox {
+  position: relative; /* Change to relative */
+  width: 200px;
+  height: 260px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  top: 10%;
+  left: 20%;
+  border-radius: 5px;
+}
+
+.imgbox img {
+  position: relative;
+  transition: transform 0.3s ease;
+  max-width: 145px;
+  max-height: 170px;
+  top: 20%;
+}
+
+.rotateIcon,
+.removeIcon {
+  position: absolute;
+  top: 12%;
+  right: 1.5rem;
+  bottom: 5px; /* Adjust to center vertically */
+  cursor: pointer;
+  z-index: 2;
+}
+
+.removeIcon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.removeIcon:hover {
+  background-color: #f52a2a;
+  color: #fff;
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotateIcon {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  margin-right: 1.8rem;
+}
+
+.rotateIcon:hover {
+  background-color: #f52a2a;
+  color: #fff;
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon {
+  position: absolute;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border: 1px solid #bababa;
+  border-radius: 50%; /* Adjust to 50% for a circular shape */
+  font-size: 28px;
+  cursor: pointer;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Centering trick */
+  z-index: 2;
+}
+
+
+.icon:hover {
+  background-color: #ff2d2d;
+  color: #fff;
+}
+
+.backbutton {
+  position: relative;
+  background-color: #434242;
+  color: white;
+  padding: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  top: 35%;
+  right: 18%;
+}
+
+.backbutton:hover {
+  background-color: rgb(255, 31, 31);
+}
+
+/* Existing styles for larger screens */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .step2Background {
+    height: auto;
+  }
+
+  .ConvertOptions {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .ImageContainer {
+    min-width: auto;
+  }
+
+  .ImageBox {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .imgbox {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+
+  .imgbox img {
+    width: 100%;
+    max-height: 100%;
+    top: 0;
+  }
+
+  .rotateIcon,
+  .removeIcon {
+    top: 5%;
+    right: 5%;
+  }
+
+  .icon {
+    top: 10%;
+    left: 75%;
+  }
+
+  .backbutton {
+    top: 10%;
+    right: 5%;
+  }
+}

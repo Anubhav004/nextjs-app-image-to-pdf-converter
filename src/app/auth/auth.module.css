@@ -1,0 +1,106 @@
+
+/* auth page css */
+
+.authPage {
+    display: flex;
+    flex-wrap: wrap; /* Add wrap property to handle smaller screens */
+    margin: 0 auto;
+  }
+  
+  .leftContainer {
+    width: 45%;
+    background-color: #ff4848;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the total width */
+  }
+  
+  .Content {
+    margin-top: 20%;
+  }
+  
+  .Contentx {
+    margin-top: 15%;
+  }
+  
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  .description {
+    margin-top: 20px;
+  }
+  
+  .socialIcons {
+    margin-top: 20px;
+  }
+  
+  .socialIcons img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .rightContainer {
+    width: 55%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the total width */
+  }
+  
+  .tabButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom: solid 1px #939393;
+    border-top: solid 1px #939393;
+  }
+  
+  .tabButtons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: solid 1px #939393;
+    transform: translateX(-50%);
+  }
+  
+  .tabButtons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  .activeTab {
+    color: #ff2c2c;
+  }
+  
+  .tabButtons button:hover {
+    color: #ff2c2c;
+  }
+  
+  
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .authPage {
+      flex-direction: column-reverse; /* Reverse the order of flex items in column layout */
+    }
+  
+    .leftContainer,
+    .rightContainer {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .Content {
+      margin-top: 10%; /* Adjust margin for better spacing on smaller screens */
+    }
+  }

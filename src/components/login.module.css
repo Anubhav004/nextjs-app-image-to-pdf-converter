@@ -1,0 +1,87 @@
+.loginsection {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginheading {
+    text-align: center;
+    color: #333;
+  }
+  
+  .loginform {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formlabel {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .forminput {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-left: 35px;
+  }
+  
+  .formbutton {
+    background-color: #ff2c2c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .formbutton:hover {
+    background-color: #ea1d1d;
+  }
+
+.formField {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.icon {
+  position: absolute;
+  top: 55%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #ff4e4e;
+}
+
+.forgotPassword {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forgotPassword a {
+  color: #ff4e4e;
+  text-decoration: none;
+}
+
+.forgotPassword a:hover {
+  text-decoration: underline;
+}
+
+
+
+  /* Additional styling for responsiveness */
+  @media (max-width: 480px) {
+    .loginsection {
+      width: 90%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  

@@ -1,0 +1,269 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.navbarleft,
+.navbarcenter,
+.navbarright {
+  display: flex;
+  align-items: center;
+}
+
+.navbarright {
+  padding: 0 10px;
+}
+
+.navbarright a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #000;
+  border: solid 1.5px #000;
+  padding: 4px 15px;
+  border-radius: 20px;
+}
+
+.navbarright a:hover {
+  color: #ff2c2c;
+  border: solid 2px #ff2c2c;
+}
+
+.navbarleft{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.navbarleft a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-bottom: -5px;
+  padding-right: 5px;
+}
+
+.navbarcenter .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdowntoggle {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.icontoolist {
+  margin-bottom: -2px;
+  padding-right: 2px;
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdowncontent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdowncontent a:hover {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+
+.mobilebar {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+  position: absolute;
+  top: 57px; 
+  left: 0;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  background-color: #ffffff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.mobileMenu a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333333; 
+}
+
+.mobileMenu a:hover {
+  background-color: #f0f0f0;
+
+}
+
+.navbarrightMobile {
+  display: flex;
+  margin-left: 20px;
+  gap: 10px;
+  padding: 18px 10px;
+}
+
+.navbarrightMobile a {
+  margin: 5px 0;
+  color: #000;
+  border: solid 2px #000;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.navbarrightMobile a:hover {
+  color: #ff2c2c;
+  border: solid 2px #ff2c2c;
+  background-color: #fff;
+}
+
+/* Tool List dropdown styles */
+.toolListDropdown {
+  margin-top: 10px;
+}
+
+.toolListButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+}
+
+.toolListContent {
+  padding: 10px;
+}
+
+.toolListContent a {
+  display: block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.toolListContent a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show Tool List content when Tool List button is clicked */
+.toolListButton:focus + .toolListContent {
+  display: block;
+}
+
+.dropDown {
+  margin-bottom: -3px;
+  right: 30px;
+  position: absolute;
+}
+
+.dropDown:hover,
+.toolListButton:hover {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    padding: .8rem;
+  }
+
+  .navbarleft {
+    display: flex;
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -3px;
+    padding-right: 5px;
+  }
+
+  .navbarright {
+    display: none;
+  }
+
+  .navbarcenter {
+    display: none;
+  }
+
+  .navbarcenter .dropdown {
+    position: static;
+  }
+
+  .dropdowncontent {
+    position: relative;
+  }
+
+  .mobilebar {
+    display: flex;
+    font-size: 26px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
+    padding: 2px;
+    
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+  
+
+}
+
+

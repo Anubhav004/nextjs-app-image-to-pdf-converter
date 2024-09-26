@@ -1,0 +1,85 @@
+/* components/signup.module.css */
+
+.signupsection {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signupheading {
+    text-align: center;
+    color: #333;
+  }
+  
+  .signupform {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formlabel {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .forminput {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .formbutton {
+    background-color: #ff2c2c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .formbutton:hover {
+    background-color: #ea1d1d;
+  }
+
+/* Your existing styles */
+
+.formField {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.formlabel {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #ff4e4e;
+}
+
+.forminput {
+  padding-left: 30px; /* Adjust this value based on the icon size and spacing */
+}
+
+/* Other existing styles */
+
+
+  
+  /* Additional styling for responsiveness */
+  @media (max-width: 480px) {
+    .signupsection {
+      width: 90%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  
