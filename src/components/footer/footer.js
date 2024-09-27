@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './footer.module.css';
 import { FaFacebookSquare } from "react-icons/fa";
 
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className={styles.footersection}>
       <h3 className={styles.footerheading}>LOGO</h3>
         <div className={styles.logosection}>
-          <img src="/path/to/your/logo.png" alt="Logo" />
+          <Image src="/path/to/your/logo.png" alt="Logo" />
           <p>Logo Description</p>
         </div>
         <div className={styles.socialicons}>

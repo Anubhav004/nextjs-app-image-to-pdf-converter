@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import LoginSection from '../../components/loginsection';
 import SignupSection from '../../components/signupsection';
 import styles from './auth.module.css';
+import Image from 'next/image';
 
 const AuthPage = () => {
   const [activeTab, setActiveTab] = useState('login');
@@ -18,7 +19,7 @@ const AuthPage = () => {
       <div className={styles.leftContainer}>
       <div className={styles.Content}>
         {/* Left Content */}
-        <img className={styles.logo} src="/path/to/your/logo.png" alt="Logo" />
+        <Image className={styles.logo} src="/path/to/your/logo.png" alt="Logo" />
 
         <p className={styles.description}>
           Your description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -7,6 +7,7 @@ import { MdRotateRight } from "react-icons/md";
 import { RxPlusCircled } from "react-icons/rx";
 import { RiCloseFill } from "react-icons/ri";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import Image from 'next/image';
 
 const JpgToPdfConverter = () => {
   const [pdfBlob, setPdfBlob] = useState(null);
@@ -282,7 +283,7 @@ const JpgToPdfConverter = () => {
                     margin === 'noMargin' ? '' : margin === 'smallMargin' ? styles.smallMargin : styles.bigMargin
                   }`}
                 >
-                  <img
+                  <Image
                     src={imgUrl}
                     alt="Uploaded"
                     style={{ width: '100%', height: '100%', transform: `rotate(${rotationAngle}deg)` }}
