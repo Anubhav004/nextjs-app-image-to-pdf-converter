@@ -22,7 +22,7 @@ const JpgToPdfConverter = () => {
 
   const convertImgToPdf = () => {
     if (imgUrl) {
-        const img = new Image();
+        const img = new window.Image();
         img.src = imgUrl;
 
         img.onload = () => {
@@ -103,7 +103,7 @@ const JpgToPdfConverter = () => {
     ctx.drawImage(image, -image.width / 2, -image.height / 2, image.width, image.height);
   
     // Create a new Image object with the rotated image data
-    const rotatedImage = new Image();
+    const rotatedImage = new window.Image();
     rotatedImage.src = canvas.toDataURL('image/jpeg');
   
     return { image: rotatedImage, width: rotatedWidth, height: rotatedHeight };
@@ -287,6 +287,7 @@ const JpgToPdfConverter = () => {
                     src={imgUrl}
                     alt="Uploaded"
                     style={{ width: '100%', height: '100%', transform: `rotate(${rotationAngle}deg)` }}
+                    width={200} height={200}
                   />
                 </div>
               </div>

@@ -1,8 +1,6 @@
 import styles from '@/app/page.module.css'
 import JpgToPdfConverter from '@/components/jpgtopdfconverter';
 import Cardslider from '@/components/cardslider'
-import PdfToImageConverter from '@/components/pdfToJpgConverter';
-
 
 
 const Home = () => {

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={styles.footersection}>
       <h3 className={styles.footerheading}>LOGO</h3>
         <div className={styles.logosection}>
-          <Image src="/path/to/your/logo.png" alt="Logo" />
+          <Image src="/loggo.png" width={100} height={40} alt="Logo" />
           <p>Logo Description</p>
         </div>
         <div className={styles.socialicons}>
